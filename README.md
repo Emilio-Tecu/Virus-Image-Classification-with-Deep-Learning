@@ -43,5 +43,8 @@ Se entrenó una red neuronal convolucional con:
 - Métrica principal: accuracy
 
 ## Resultados
-El modelo alcanzó 87% de precisión en el conjunto de prueba, no obstante existen pequeñas dificultades al trabajar con virus benignos, pues la identificación de los mismos es confusa para el modelo.  
+El modelo alcanzó 87% de precisión en el conjunto de prueba, no obstante existen pequeñas dificultades al trabajar con virus benignos, pues la identificación de los mismos es confusa para el modelo. 
+
+Se adjunta un pequeño subconjunto de datos para realizar la prueba, para probarlo, cambiar la ruta en donde se extrae el archivo zip.
+
 
