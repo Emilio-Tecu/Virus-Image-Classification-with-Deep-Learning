@@ -43,7 +43,7 @@ Se entrenó una red neuronal convolucional con:
 - Métrica principal: accuracy
 
 ## Resultados
-El modelo alcanzó aproximadamente **88% de precisión** en el conjunto de prueba.  
+El modelo alcanzó **87% de precisión** en el conjunto de prueba, no obstante existen pequeñas dificultades al trabajar con virus benignos, pues la identificación de los mismos es confusa para el modelo.  
 Incluye visualización de la matriz de confusión y un `classification_report` detallado.
 
 ![Matriz de confusión](![image](https://github.com/user-attachments/assets/57e746a1-83bd-4960-bc73-1f8a8953598b))
