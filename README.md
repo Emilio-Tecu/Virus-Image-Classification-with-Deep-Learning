@@ -25,16 +25,12 @@ VirusMNIST es un conjunto de datos que transforma archivos `.exe` en imágenes d
 | 9     | Malware  | Heuristic  | myfile.exe     | 3,339      |
 
 ## Preprocesamiento con filtros
-Como parte del preprocesamiento de datos, se aplicó un **filtro de Sobel** a cada imagen con el fin de resaltar los bordes y contornos. Esta técnica permite al modelo captar mejor las características visuales que podrían ser distintivas entre distintas clases de virus.
-
+Como parte del preprocesamiento de datos, se aplicó un **filtro de gaussiano** a cada imagen con el fin de reducir el ruido. 
 ```python
-from scipy.ndimage import sobel
-import numpy as np
-
-# Aplicar filtro de Sobel en eje x e y
-sobel_x = sobel(imagen, axis=0)
-sobel_y = sobel(imagen, axis=1)
-imagen_filtrada = np.hypot(sobel_x, sobel_y)
+def aplicar_gaussiano(img):
+    # Se aplica un filtro gaussiano para suavizar la imagen,
+    # lo cual ayuda a reducir el ruido y resalta las estructuras más relevantes.
+    return gaussian_filter(img, sigma=1)
 ```
 
 ## Modelo
